@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/white"
+
+    android:orientation="vertical"
+    android:padding="16dp">
+
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/stat_sys_warning"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Opps!"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatTextView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="No network available"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tryAgain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+
+
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Please try again"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
